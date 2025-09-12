@@ -1,0 +1,47 @@
+.background{
+  background-color: rgb(103, 154, 165);
+}
+.container{
+  padding-top: 1px;
+  margin:2%;
+  margin-top: 2%;
+  width:1340px;
+  height: 1800px;
+  border-radius: 50px;
+  background-color: rgb(199, 227, 233);
+}
+.portfolio{
+  text-align: center;
+  font-family:Sedan SC;
+  letter-spacing: 10px;
+}
+.navigation {
+  background-color: rgb(66,104,112);
+  text-align: center;
+  padding: 15px;
+}
+
+.navigation a {
+  color: white;  
+  text-decoration: none;
+  margin:40px; 
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: color 0.2s;
+}
+
+.navigation a:hover {
+  color: #0ba8c1;
+}
+.name{
+  font-size: 30px;
+  font-family: salome;
+  letter-spacing:3px ;
+  margin-left:100px;
+  margin-top: 100px;
+}
+.line{
+ width: 80px;
+ border: solid black 2px ;
+}
+
