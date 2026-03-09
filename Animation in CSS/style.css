@@ -8,9 +8,9 @@
 
 
  @keyframes shadow{
-  0%   { transform: scaleY(2); }
-  50%  { transform: scaleY(0.5);}
-  100% { transform: scaleY(2); }
+  0%   { transform: scale(2); }
+  50%  { transform: scaleX(0.5);}
+  100% { transform: scale(2); }
 }
 @keyframes sun{
   from{transform:rotate(0deg);}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0f0f0f;
+  padding: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+/* CARD */
+.card {
+  width: 340px;
+  height: 380px;
+  background: #ffffff;
+  border-radius: 32px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* TOP */
+.card .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top img {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  padding: 6px;
+  object-fit: contain;
+}
+
+.top button {
+  border: 1px solid #e6e6e6;
+  background: #fafafa;
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 10px;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* CENTER */
+.center {
+  margin-top: 20px;
+}
+
+.center h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.center h3 span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+  margin-left: 6px;
+}
+
+.center h2 {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111;
+}
+
+.tag {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.tag h4 {
+  background: #f1f1f1;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* BOTTOM */
+.bottom {
+  border-top: 1px solid #ececec;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111;
+}
+
+.bottom p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.bottom button {
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bottom button:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
