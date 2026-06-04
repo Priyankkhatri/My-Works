@@ -31,6 +31,21 @@ typedef struct employee
     float salary;
 } emp;
 
+union money
+{
+    /* daota */
+    int rice;
+    char car; 
+    float pounds;
+} emp;
+
+
+
+
+
+
+
+
 int main(){
     emp priyank;
     priyank.eID = 01;

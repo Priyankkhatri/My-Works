@@ -1,0 +1,41 @@
+npm init -y => initiates nodejs application 
+
+npm i express => install express package
+
+res => response
+req => request
+
+<----- HTTP methods ----->
+
+GET => server se data fetch krvana ho tab use krte hai
+POST => server pr data send krna ho tab use krte hai
+PATCH => server pr data already hai and uss data ko update krna hai
+DELETE => server pr data hai and usse delete krna hai 
+
+
+BASIC Production level
+
+app.js file in src folder => main work is to create the server
+server.js file in root folder => server ko start krna
+
+
+
+
+
+/* 
+note = {
+    title : "my first note",
+    description : "this is my first note"
+}
+
+const notes = [
+    {
+        title : "my first note",
+        description : "this is my first note"
+    },
+    {
+        title : "my first note",
+        description : "this is my second note"
+    },
+]
+*/
