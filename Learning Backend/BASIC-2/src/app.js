@@ -6,7 +6,6 @@ const app = express()
 
 
 const notes = []
-
 /* title, description */
 /* POST /notes  */
 app.post("/notes", (req, res)=>{

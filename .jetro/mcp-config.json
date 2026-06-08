@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "jetro": {
+      "command": "C:\\Users\\priya\\.jetro\\runtime\\node-win32-x64.exe",
+      "args": [
+        "C:\\Users\\priya\\.jetro\\mcp-server\\index.js"
+      ],
+      "env": {
+        "JET_WORKSPACE": "c:\\Users\\priya\\Desktop\\CG\\My Works",
+        "JET_API_URL": "https://api.jetro.ai",
+        "PATH": "C:\\Users\\priya\\.jetro\\runtime;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\HP\\OMEN-Broadcast\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\MinGW\\bin;C:\\Users\\priya\\.local\\bin;C:\\Program Files\\GitHub CLI\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\priya\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;C:\\Users\\priya\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\priya\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\priya\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\priya\\AppData\\Roaming\\npm;D:\\Microsoft VS Code\\bin;C:\\Users\\priya\\AppData\\Local\\Programs\\Antigravity\\bin;C:\\Users\\priya\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe\\platform-tools;C:\\Users\\priya\\AppData\\Local\\Programs\\Antigravity IDE\\bin;D:\\Antigravity IDE\\bin"
+      }
+    }
+  }
+}
