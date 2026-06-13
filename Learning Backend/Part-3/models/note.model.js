@@ -19,4 +19,6 @@ inn operations ko database me krne ke liye notemodel use krna padta hai
 
 agr notemodels use nahi krne toh kaam ho sakta hai but task complex ho jaata hai
 */
-const noteModel = mongoose.model("note", notsSchema) 
+
+const noteModel = mongoose.model("note", noteSchema) 
+module.exports = noteModel
