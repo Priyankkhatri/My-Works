@@ -1,0 +1,1 @@
+Interpolation is a one-way data binding technique used to display TypeScript data from the component class into the HTML template using double curly braces {{ }}.
