@@ -20,8 +20,10 @@ export class App {
     this.count++;
   }
 
-
-
-
 studentNames = ["abc" , "def", "ghi"];
+studentDetails = [
+{name: "Samir", age: 23, city: "Delhi"},
+{name: "Rohit", age: 25, city: "Mumbai"},
+{name: "Anjali", age: 22, city: "Bangalore"}
+]
 }
