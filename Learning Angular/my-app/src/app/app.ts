@@ -43,8 +43,8 @@ export class App {
 
   track = 0;
 
-  changeTrack() {
-    if (this.track == 4) {
+  changeTrack(){
+    if (this.track == 4){
       this.track = 0;
     }
     else {
