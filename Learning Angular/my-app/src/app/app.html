@@ -1,3 +1,13 @@
 <h1>Hello I'm {{ name }}</h1>
+<input type="number" placeholder="enter an age" [(ngModel)] = "age">
 <h2> Age : {{ age }}</h2>
 <h3> College : {{ college }}</h3>
+
+
+<h1>{{ count }}</h1>
+<button (click)="countNum()">Click me!</button>
+
+
+<ul>
+    <li *ngFor="let name of studentNames">{{ name }}</li>
+</ul>
