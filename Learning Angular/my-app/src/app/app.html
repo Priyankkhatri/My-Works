@@ -16,3 +16,5 @@
     <li *ngFor = "let student of studentDetails"> {{student.name}}, {{student.age}}, {{student.city}}</li>
 </ul>
 
+<h1 *ngIf="show">The value of show is: {{show}}</h1>
+<button (click)="changeShow()">Click me!</button>

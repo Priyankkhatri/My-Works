@@ -9,21 +9,35 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.css'
 })
 export class App {
-  name:string = "Priyank";
+  name: string = "Priyank";
   age = 19;
   college = "CodingGita";
 
 
 
-  count  = 0;
-  countNum(){
+  count = 0;
+  countNum() {
     this.count++;
   }
 
-studentNames = ["abc" , "def", "ghi"];
-studentDetails = [
-{name: "Samir", age: 23, city: "Delhi"},
-{name: "Rohit", age: 25, city: "Mumbai"},
-{name: "Anjali", age: 22, city: "Bangalore"}
-]
+  studentNames = ["abc", "def", "ghi"];
+  studentDetails = [
+    { name: "Samir", age: 23, city: "Delhi" },
+    { name: "Rohit", age: 25, city: "Mumbai" },
+    { name: "Anjali", age: 22, city: "Bangalore" }
+  ]
+
+
+
+
+  show = true;
+  changeShow() {
+    if (this.show == true) {
+      this.show = false;
+    }
+    else {
+      this.show = true;
+    }
+  }
+
 }
