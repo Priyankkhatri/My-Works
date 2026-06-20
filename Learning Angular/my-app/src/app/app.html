@@ -18,3 +18,11 @@
 
 <h1 *ngIf="show">The value of show is: {{show}}</h1>
 <button (click)="changeShow()">Click me!</button>
+
+<p *ngIf="track === 0" style="color: red; background-color: yellow;">The value of track is: {{track}}</p>
+<p *ngIf="track === 1" style="color: blue; background-color: lightblue;">The value of track is: {{track}}</p>
+<p *ngIf="track === 2" style="color: green; background-color: lightgreen;">The value of track is: {{track}}</p>
+<p *ngIf="track === 3" style="color: orange; background-color: moccasin;">The value of track is: {{track}}</p>
+<p *ngIf="track === 4" style="color: purple; background-color: lavender;">The value of track is: {{track}}</p>
+
+<button (click)="changeTrack()">Track me</button>
