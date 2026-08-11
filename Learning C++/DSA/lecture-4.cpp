@@ -12,7 +12,6 @@
 //     int n ;
 //     cin >> n;
 
-
 //     int i = 1;
 //     while(i<=n){
 //         int j=1;
@@ -77,12 +76,9 @@
 //         cout << endl;
 //         i++;
 //     }
-    
 
-//     return 0; 
+//     return 0;
 // }
-
-
 
 // star pattern question
 // *
@@ -90,24 +86,85 @@
 // ***
 // ****
 // *****
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
+// int main(){
+//     int n;
+//     cin >> n;
 
-    int row = 1;
-    int count = 1;
+//     int row = 1;
+//     int count = 1;
 
-    while(row<=n){
-        int col = 1;
-        while(col <= row){
-            cout << "*";
-            col++;
-        }
-        cout << endl;
-        row++;
-    }
-    return 0;
-}
+//     while(row<=n){
+//         int col = 1;
+//         while(col <= row){
+//             cout << "*";
+//             col++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+//     return 0;
+// }
+
+// 1
+// 22
+// 333
+// 4444
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+
+//     int n;
+//     cin >> n;
+
+//     int row = 1;
+//     while(row<=n){
+//         int col = 1;
+//         while(col <= row){
+//             cout << row ;
+//             col++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+//     return 0;
+// }
+
+
+
+
+// *   *
+//  * * 
+//   *  
+//  * * 
+// *   *
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+
+//     int row;
+//     int col;
+
+//     cin >> row;
+//     cin >> col;
+
+//     for (int i = 0; i <= row; i++)
+//     {
+//         for (int j = 0; j <= col; j++)
+//         {
+//             if (i == j || i + j == 4){
+//                 cout << "*";
+//             }
+//             else{
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
