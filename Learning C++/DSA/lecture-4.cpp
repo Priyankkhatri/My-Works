@@ -246,22 +246,64 @@
 
 
 // -----Alternative way of doing this question
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main(){
-    int n;
-    cin >> n;
+// int main(){
+//     int n;
+//     cin >> n;
 
-    int row =1;
-    while(row <= n){
-        int col = 1;
-        while(col <=row){
-            cout << row + col -1 << " ";
-            col++;
-        }
-        cout << endl;
-        row++;
-    }
-    return 0;
-}
+//     int row =1;
+//     while(row <= n){
+//         int col = 1;
+//         while(col <=row){
+//             cout << row + col -1 << " ";
+//             col++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+//     return 0;
+// }
+
+
+// 1
+// 2 1
+// 3 2 1
+// 4 3 2 1
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+
+//     int row = 1;
+//     while(row<=n){
+//         int col = 1;
+//         while(col<=row){
+//             cout << row - col + 1 << " ";
+//             col ++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
+//     return 0;
+// }
+
+// Same question in for loop
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cin >> n;
+//     for(int row = 1; row<=n; row++){
+//         for(int col = 1; col <= row; col++){
+//             cout << row - col + 1 << " ";
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
