@@ -203,27 +203,27 @@
 // 3 4 5
 // 4 5 6 7
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    int row = 1;
-    while (row <= n){
-        int col = 1;
-        int value = row;
-        while(col <= row){
-            cout << value;
-            col++;
-            value++;
-        }
-        cout << endl;
-        row++;
-    }
+// int main() {
+//     int n;
+//     cin >> n;
+//     int row = 1;
+//     while (row <= n){
+//         int col = 1;
+//         int value = row;
+//         while(col <= row){
+//             cout << value;
+//             col++;
+//             value++;
+//         }
+//         cout << endl;
+//         row++;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 // #include <iostream>
 // using namespace std;
@@ -243,3 +243,25 @@ int main() {
 //     }
 //     return 0;
 // }
+
+
+// -----Alternative way of doing this question
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+
+    int row =1;
+    while(row <= n){
+        int col = 1;
+        while(col <=row){
+            cout << row + col -1 << " ";
+            col++;
+        }
+        cout << endl;
+        row++;
+    }
+    return 0;
+}
