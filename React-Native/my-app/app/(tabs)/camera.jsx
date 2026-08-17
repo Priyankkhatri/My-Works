@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
   },
   styleButton:{
     backgroundColor : 'red'
-  },
-  
+  }  
 })
 export default App;
