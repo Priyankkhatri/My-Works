@@ -9,35 +9,43 @@ const App = () => {
   if (!permission?.granted) {
     return (
       <View style={styles.permissionContainer}>
+
         <Text style={styles.permissionText}>
           Camera Permission Required
         </Text>
 
         <Button
-          style = {styles.styleButton}
+          color="red"
           title="Allow Camera"
           onPress={requestPermission}
         />
+
       </View>
     );
   }
 
   return (
-  <CameraView style={{flex:1}} />
+    <CameraView style={styles.camera} />
   );
 };
+
 const styles = StyleSheet.create({
-  permissionContainer:{
-    flex : 1,
-    justifyContent : 'center',
-    alignItems : 'center'
+
+  permissionContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  permissionText:{
-    fontSize : 20,
-    marginBottom : 20
+
+  permissionText: {
+    fontSize: 20,
+    marginBottom: 20
   },
-  styleButton:{
-    backgroundColor : 'red'
-  }  
-})
+
+  camera: {
+    flex: 1
+  }
+
+});
+
 export default App;
