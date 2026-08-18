@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, View, Button, StyleSheet } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 
 const App = () => {
 
+  const [facing, setFacing] = useState('back');
   const [permission, requestPermission] = useCameraPermissions();
 
+  // Permission screen
   if (!permission?.granted) {
     return (
       <View style={styles.permissionContainer}>
@@ -24,8 +26,29 @@ const App = () => {
     );
   }
 
+  // Camera screen
   return (
-    <CameraView style={styles.camera} />
+    <View style={styles.cameraContainer}>
+
+      <CameraView
+        style={styles.camera}
+        facing={facing}
+      />
+
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Flip Camera"
+          onPress={() => {
+            if (facing === 'back') {
+              setFacing('front');
+            } else {
+              setFacing('back');
+            }
+          }}
+        />
+      </View>
+
+    </View>
   );
 };
 
@@ -42,8 +65,18 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
 
+  cameraContainer: {
+    flex: 1
+  },
+
   camera: {
     flex: 1
+  },
+
+  buttonContainer: {
+    position: 'absolute',
+    bottom: 40,
+    alignSelf: 'center'
   }
 
 });
