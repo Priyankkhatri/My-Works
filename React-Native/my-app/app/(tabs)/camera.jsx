@@ -3,9 +3,8 @@ import { Text, View, Button, StyleSheet } from 'react-native';
 import { CameraView, useCameraPermissions } from 'expo-camera';
 
 const App = () => {
-
-  const [facing, setFacing] = useState('back');
   const [permission, requestPermission] = useCameraPermissions();
+  const [facing, setFacing] = useState('back');
 
   // Permission screen
   if (!permission?.granted) {
@@ -29,19 +28,18 @@ const App = () => {
   // Camera screen
   return (
     <View style={styles.cameraContainer}>
-
       <CameraView
         style={styles.camera}
         facing={facing}
       />
-
       <View style={styles.buttonContainer}>
         <Button
           title="Flip Camera"
           onPress={() => {
             if (facing === 'back') {
               setFacing('front');
-            } else {
+            } 
+            else {
               setFacing('back');
             }
           }}
