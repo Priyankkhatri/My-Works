@@ -5,6 +5,7 @@ import { CameraView, useCameraPermissions } from 'expo-camera';
 const App = () => {
   const [permission, requestPermission] = useCameraPermissions();
   const [facing, setFacing] = useState('back');
+  const [zoom, setZoom] = useState(0);
 
   // Permission screen
   if (!permission?.granted) {
@@ -31,6 +32,7 @@ const App = () => {
       <CameraView
         style={styles.camera}
         facing={facing}
+        zoom={zoom}
       />
       <View style={styles.buttonContainer}>
         <Button
@@ -38,12 +40,31 @@ const App = () => {
           onPress={() => {
             if (facing === 'back') {
               setFacing('front');
-            } 
+            }
             else {
               setFacing('back');
             }
           }}
         />
+      </View>
+
+      <View style={styles.zoomContainer}>
+        <View style={styles.zoomButton1}>
+          <Button
+            title='+'
+            onPress={() => {
+              setZoom(prev => prev + 0.1);
+            }}
+          />
+        </View>
+        <View style={styles.zoomButton2}>
+          <Button
+            title='-'
+            onPress={() => {
+              setZoom(prev => prev - 0.1);
+            }}
+          />
+        </View>
       </View>
 
     </View>
@@ -75,8 +96,23 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 40,
     alignSelf: 'center'
+  },
+  zoomContainer: {
+    position: 'absolute',
+    bottom: 100,
+    alignSelf: 'center',
+    flexDirection: 'row',
+    gap: 10
+  },
+  zoomButton1 : {
+    height: 60,
+    width : 60
+  },
+  zoomButton2 : {
+    height: 60,
+    width : 60
   }
-
-});
+}
+);
 
 export default App;
