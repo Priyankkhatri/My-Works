@@ -29,42 +29,72 @@ const App = () => {
   // Camera screen
   return (
     <View style={styles.cameraContainer}>
+
       <CameraView
         style={styles.camera}
         facing={facing}
         zoom={zoom}
       />
+
+      {/* Flip Camera */}
       <View style={styles.buttonContainer}>
         <Button
           title="Flip Camera"
           onPress={() => {
             if (facing === 'back') {
               setFacing('front');
-            }
-            else {
+            } else {
               setFacing('back');
             }
           }}
         />
       </View>
 
+      {/* Zoom Controls */}
       <View style={styles.zoomContainer}>
-        <View style={styles.zoomButton1}>
-          <Button
-            title='+'
-            onPress={() => {
-              setZoom(prev => prev + 0.1);
-            }}
-          />
+
+        {/* Current Zoom */}
+        <View style={styles.zoomDisplay}>
+          <Text style={styles.zoomText}>
+            {zoom.toFixed(1)}x
+          </Text>
         </View>
-        <View style={styles.zoomButton2}>
-          <Button
-            title='-'
-            onPress={() => {
-              setZoom(prev => prev - 0.1);
-            }}
-          />
+
+        {/* + and - buttons */}
+        <View style={styles.zoomButtons}>
+
+          <View style={styles.zoomButton}>
+            <Button
+              title="-"
+              onPress={() => {
+                setZoom(prev => {
+                  if (prev > 0) {
+                    return prev - 0.1;
+                  }
+
+                  return prev;
+                });
+              }}
+            />
+          </View>
+
+          <View style={styles.zoomButton}>
+            <Button
+              title="+"
+              onPress={() => {
+                setZoom(prev => {
+                  if (prev < 1) {
+                    return prev + 0.1;
+                  }
+
+                  return prev;
+                });
+              }}
+            />
+          </View>
+
         </View>
+
       </View>
 
     </View>
@@ -97,22 +127,34 @@ const styles = StyleSheet.create({
     bottom: 40,
     alignSelf: 'center'
   },
+
   zoomContainer: {
     position: 'absolute',
     bottom: 100,
     alignSelf: 'center',
+    alignItems: 'center'
+  },
+
+  zoomDisplay: {
+    marginBottom: 10
+  },
+
+  zoomText: {
+    color: 'white',
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+
+  zoomButtons: {
     flexDirection: 'row',
     gap: 10
   },
-  zoomButton1 : {
-    height: 60,
-    width : 60
-  },
-  zoomButton2 : {
-    height: 60,
-    width : 60
+
+  zoomButton: {
+    width: 60,
+    height: 60
   }
-}
-);
+
+});
 
 export default App;
