@@ -1,9 +1,26 @@
-import React from 'react'
+import { GetServerSideProps } from 'next'
 
-const aboutPage = () => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { query } = context
+  console.log(query)
+
+  return {
+    props: {
+      name: query.name,
+      age: query.age || 346,
+    },
+  }
+}
+
+interface AboutPageProps {
+  name: string | null;
+  age: number | null;
+}
+
+const AboutPage = ({ name, age }: AboutPageProps) => {
   return (
-    <div>This is About Page</div>
+    <div>This is AboutPage {name} {age}</div>
   )
 }
 
-export default aboutPage
+export default AboutPage
