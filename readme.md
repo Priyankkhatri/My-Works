@@ -113,3 +113,10 @@ Install dependencies separately in the desired `Learning Backend/Part-*` folder.
 ## Prerequisites
 
 Install a current Node.js LTS release with npm for the JavaScript projects. Use the Angular CLI and Expo tooling through each project's npm scripts; do not assume a global installation is required. A C++ compiler is needed for the C++ exercises.
+
+## Working conventions
+
+- Keep a lesson's changes within its own folder whenever possible.
+- Commit source files and lockfiles that describe reproducible dependencies.
+- Do not commit installed dependencies, framework build output, editor settings, or compiled binaries; the root `.gitignore` covers these generated files.
+- Treat each project as an experiment: commands, ports, and environment requirements may differ between folders.
