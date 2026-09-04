@@ -105,3 +105,7 @@ npm start
 ```
 
 The project also provides `npm run android`, `npm run ios`, `npm run web`, and `npm run lint`.
+
+### Backend notes
+
+Install dependencies separately in the desired `Learning Backend/Part-*` folder. These lessons do not define a start script, so inspect the corresponding `server.js` and run it with your installed Node.js runtime when needed.
