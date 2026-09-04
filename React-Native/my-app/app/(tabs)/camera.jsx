@@ -6,6 +6,7 @@ const App = () => {
   const [permission, requestPermission] = useCameraPermissions();
   const [facing, setFacing] = useState('back');
   const [zoom, setZoom] = useState(0);
+  const [flash, setFlash] = useState('off');
 
   // Permission screen
   if (!permission?.granted) {
@@ -34,6 +35,7 @@ const App = () => {
         style={styles.camera}
         facing={facing}
         zoom={zoom}
+        flash={flash}
       />
 
       {/* Flip Camera */}
@@ -97,6 +99,24 @@ const App = () => {
 
       </View>
 
+      <View style={styles.flash}>
+        <Button
+          title="Flash"
+          onPress={() => {
+            setFlash(flash => {
+              if (flash === 'off') {
+                return "on";
+              } 
+              else if (flash === 'on') {
+                return "auto";
+              }
+               else {
+                return "off";
+              }
+            })
+          }}
+        />
+      </View>
     </View>
   );
 };
