@@ -75,3 +75,13 @@ npm start
 ```
 
 Run `npm run build` to produce a production build or `npm test` to run its test suite.
+
+### React commands
+
+Each numbered project under `Learning ReactJS` uses Vite. From a chosen project folder, run:
+
+```bash
+npm run dev
+```
+
+`npm run build`, `npm run lint`, and `npm run preview` are also available in these projects.
