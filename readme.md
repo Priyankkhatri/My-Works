@@ -44,3 +44,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### Backend
 
 `Learning Backend` is split into `Part-1`, `Part-2`, and `Part-3` to preserve the progression of the Node.js and Express lessons. The later part also includes application and database modules under `src`.
+
+### React
+
+`Learning ReactJS` is arranged as numbered Vite projects. Topics include components, props, card layouts, CSS, Tailwind CSS, UI work, and functions.
