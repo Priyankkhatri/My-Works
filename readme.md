@@ -95,3 +95,13 @@ npm run dev
 ```
 
 Use `npm run build` to check a production build, `npm start` to serve it, and `npm run lint` for linting.
+
+### React Native commands
+
+From `React-Native/my-app`, start Expo with:
+
+```bash
+npm start
+```
+
+The project also provides `npm run android`, `npm run ios`, `npm run web`, and `npm run lint`.
