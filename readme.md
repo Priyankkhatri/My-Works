@@ -32,3 +32,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### CSS animation
 
 `Animation in CSS` contains a small browser-based animation exercise. Open `index.html` directly in a browser to view it.
+
+### C++
+
+`Learning C++` covers language fundamentals such as arrays, pointers, structures, unions, and enums. The `DSA` folder extends that work with lecture-based data-structure and algorithm exercises.
