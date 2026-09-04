@@ -65,3 +65,13 @@ Each area contains self-contained exercises, so its dependencies and commands li
 4. Use the relevant command below.
 
 There is no root-level install or run command because the folders are independent learning projects.
+
+### Angular commands
+
+From `Learning Angular/my-app`, use:
+
+```bash
+npm start
+```
+
+Run `npm run build` to produce a production build or `npm test` to run its test suite.
