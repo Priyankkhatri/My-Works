@@ -56,3 +56,12 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### React Native
 
 `React-Native/my-app` is an Expo application with tab screens, a modal screen, theming helpers, and camera-related practice.
+
+## Getting started
+
+1. Clone this repository.
+2. Change into the specific project directory you want to explore.
+3. Install that project's dependencies with `npm install` when it has a `package.json`.
+4. Use the relevant command below.
+
+There is no root-level install or run command because the folders are independent learning projects.
