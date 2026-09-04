@@ -22,3 +22,5 @@ The code here is intentionally organized by topic and course progression. It is 
 | `Learning Next.js` | Next.js routing and application experiments |
 | `Learning ReactJS` | Incremental React and Vite exercises |
 | `React-Native` | Expo and React Native practice app |
+
+Empty placeholder folders such as `data`, `projects`, and `Learning Typescript` are kept for future exercises.
