@@ -52,3 +52,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### Next.js
 
 `Learning Next.js` contains two applications. `my-app` uses the App Router, while `my-app2` provides Pages Router examples, including dynamic product routes.
+
+### React Native
+
+`React-Native/my-app` is an Expo application with tab screens, a modal screen, theming helpers, and camera-related practice.
