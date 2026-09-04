@@ -40,3 +40,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### Angular
 
 `Learning Angular/my-app` is an Angular application used to practice the framework's application structure, routing, styles, and tests.
+
+### Backend
+
+`Learning Backend` is split into `Part-1`, `Part-2`, and `Part-3` to preserve the progression of the Node.js and Express lessons. The later part also includes application and database modules under `src`.
