@@ -120,3 +120,7 @@ Install a current Node.js LTS release with npm for the JavaScript projects. Use 
 - Commit source files and lockfiles that describe reproducible dependencies.
 - Do not commit installed dependencies, framework build output, editor settings, or compiled binaries; the root `.gitignore` covers these generated files.
 - Treat each project as an experiment: commands, ports, and environment requirements may differ between folders.
+
+## Learning roadmap
+
+Future work can extend the placeholder topic folders, add a focused project under `projects`, and document any exercise that gains setup requirements beyond the commands listed above.
