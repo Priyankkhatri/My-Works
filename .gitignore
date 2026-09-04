@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Framework build output
+dist/
+.next/
+out/
+build/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Native build artifacts
+*.exe
+*.o
