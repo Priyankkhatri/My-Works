@@ -48,3 +48,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### React
 
 `Learning ReactJS` is arranged as numbered Vite projects. Topics include components, props, card layouts, CSS, Tailwind CSS, UI work, and functions.
+
+### Next.js
+
+`Learning Next.js` contains two applications. `my-app` uses the App Router, while `my-app2` provides Pages Router examples, including dynamic product routes.
