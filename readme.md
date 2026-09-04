@@ -85,3 +85,13 @@ npm run dev
 ```
 
 `npm run build`, `npm run lint`, and `npm run preview` are also available in these projects.
+
+### Next.js commands
+
+From either application in `Learning Next.js`, run:
+
+```bash
+npm run dev
+```
+
+Use `npm run build` to check a production build, `npm start` to serve it, and `npm run lint` for linting.
