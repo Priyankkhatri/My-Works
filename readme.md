@@ -36,3 +36,7 @@ Each area contains self-contained exercises, so its dependencies and commands li
 ### C++
 
 `Learning C++` covers language fundamentals such as arrays, pointers, structures, unions, and enums. The `DSA` folder extends that work with lecture-based data-structure and algorithm exercises.
+
+### Angular
+
+`Learning Angular/my-app` is an Angular application used to practice the framework's application structure, routing, styles, and tests.
