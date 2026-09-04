@@ -10,3 +10,15 @@ The code here is intentionally organized by topic and course progression. It is 
 - [Learning areas](#learning-areas)
 - [Getting started](#getting-started)
 - [Working conventions](#working-conventions)
+
+## Repository map
+
+| Directory | Purpose |
+| --- | --- |
+| `Animation in CSS` | Standalone HTML and CSS animation exercises |
+| `Learning Angular` | Angular application practice |
+| `Learning Backend` | Node.js and Express learning parts |
+| `Learning C++` | C++ language and data-structure exercises |
+| `Learning Next.js` | Next.js routing and application experiments |
+| `Learning ReactJS` | Incremental React and Vite exercises |
+| `React-Native` | Expo and React Native practice app |
