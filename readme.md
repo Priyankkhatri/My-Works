@@ -109,3 +109,7 @@ The project also provides `npm run android`, `npm run ios`, `npm run web`, and `
 ### Backend notes
 
 Install dependencies separately in the desired `Learning Backend/Part-*` folder. These lessons do not define a start script, so inspect the corresponding `server.js` and run it with your installed Node.js runtime when needed.
+
+## Prerequisites
+
+Install a current Node.js LTS release with npm for the JavaScript projects. Use the Angular CLI and Expo tooling through each project's npm scripts; do not assume a global installation is required. A C++ compiler is needed for the C++ exercises.
