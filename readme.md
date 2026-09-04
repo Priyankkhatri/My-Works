@@ -24,3 +24,11 @@ The code here is intentionally organized by topic and course progression. It is 
 | `React-Native` | Expo and React Native practice app |
 
 Empty placeholder folders such as `data`, `projects`, and `Learning Typescript` are kept for future exercises.
+
+## Learning areas
+
+Each area contains self-contained exercises, so its dependencies and commands live with the relevant project.
+
+### CSS animation
+
+`Animation in CSS` contains a small browser-based animation exercise. Open `index.html` directly in a browser to view it.
