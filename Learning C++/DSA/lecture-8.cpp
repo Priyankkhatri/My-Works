@@ -99,25 +99,24 @@
 // // ---------------------__Functions------------
 
 // power of (a,b)
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     //pow(a,b)
+#include <iostream>
+using namespace std;
 
-//     int a , b;
-//     cout << "Enter the num: "<< endl;
-//     cin >>  a;
-//     cout << "enter the power of num: " << endl;
-//     cin >>  b;
+int power(int a, int b){
+    int ans = 1;
+    for(int i = 1; i <= b; i++){
+        ans *= a;
+    }
+    return ans;
+}
 
-//     int ans = 1;
-//     for(int i=1; i<=b; i++){
-//         ans = ans*a;
-//     }
-//     cout << "ans is: "<< ans<< endl;
+int main(){
+    int a, b;
+    cout << "Enter the number: ";
+    cin >> a;
+    cout << "Enter the power: ";
+    cin >> b;
+    cout << "ans is : "<< power(a, b) << endl;
 
-//     return 0;
-// }
-
-
-
+    return 0;
+}
