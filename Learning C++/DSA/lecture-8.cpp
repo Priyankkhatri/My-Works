@@ -98,25 +98,53 @@
 
 // // ---------------------__Functions------------
 
-// power of (a,b)
+// // power of (a,b)
+// #include <iostream>
+// using namespace std;
+
+// int power(int a, int b){
+//     int ans = 1;
+//     for(int i = 1; i <= b; i++){
+//         ans *= a;
+//     }
+//     return ans;
+// }
+
+// int main(){
+//     int a, b;
+//     cout << "Enter the number: ";
+//     cin >> a;
+//     cout << "Enter the power: ";
+//     cin >> b;
+//     cout << "ans is : "<< power(a, b) << endl;
+
+//     return 0;
+// }
+
+
+
+// odd even program using function
 #include <iostream>
 using namespace std;
 
-int power(int a, int b){
-    int ans = 1;
-    for(int i = 1; i <= b; i++){
-        ans *= a;
+bool isEven(int a){
+    if(a&1){
+        return 0;
     }
-    return ans;
+    else{
+        return 1;
+    }
 }
 
 int main(){
-    int a, b;
-    cout << "Enter the number: ";
-    cin >> a;
-    cout << "Enter the power: ";
-    cin >> b;
-    cout << "ans is : "<< power(a, b) << endl;
-
+    int num;
+    cout<<"Enter the number you want to check: ";
+    cin>>num;
+    if(isEven(num)){
+        cout << num << " is Even"<<endl;
+    } 
+    else{
+        cout << num << " is Odd"<<endl;;
+    }
     return 0;
 }
