@@ -57,40 +57,67 @@
 // -----------------------------HomeWork
 // Count how many 100rs, 50rs, 20rs, 10rs, 1rs notes will we need to fulfill the needs of the user's  targeted value
 
-#include <iostream>
-using namespace std;
-int main(){
-    int amount;
-    cout << "Enter the amount: " << endl;
-    cin >> amount;
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int amount;
+//     cout << "Enter the amount: " << endl;
+//     cin >> amount;
 
-    int n100 = 0, n50 = 0, n20 = 0, n10 = 0, n1 = 0;
-    if(amount >= 100){
-        n100 = amount / 100;
-        amount = amount % 100;
-    }
-    if(amount >= 50){
-        n50 = amount / 50;
-        amount = amount % 50;
-    }
-    if(amount >= 20){
-        n20 = amount / 20;
-        amount = amount % 20;
-    }
-    if(amount >= 10){
-        n10 = amount / 10;
-        amount = amount % 10;
-    }
-    if(amount >= 1){
-        n1 = amount / 1;
-        amount = amount % 1;
-    }
+//     int n100 = 0, n50 = 0, n20 = 0, n10 = 0, n1 = 0;
+//     if(amount >= 100){
+//         n100 = amount / 100;
+//         amount = amount % 100;
+//     }
+//     if(amount >= 50){
+//         n50 = amount / 50;
+//         amount = amount % 50;
+//     }
+//     if(amount >= 20){
+//         n20 = amount / 20;
+//         amount = amount % 20;
+//     }
+//     if(amount >= 10){
+//         n10 = amount / 10;
+//         amount = amount % 10;
+//     }
+//     if(amount >= 1){
+//         n1 = amount / 1;
+//         amount = amount % 1;
+//     }
 
-    cout << "100rs Notes = " << n100 << endl;
-    cout << "50rs Notes = " << n50 << endl;
-    cout << "20rs Notes = " << n20 << endl;
-    cout << "10rs Notes = " << n10 << endl;
-    cout << "1rs Notes = " << n1 << endl;
+//     cout << "100rs Notes = " << n100 << endl;
+//     cout << "50rs Notes = " << n50 << endl;
+//     cout << "20rs Notes = " << n20 << endl;
+//     cout << "10rs Notes = " << n10 << endl;
+//     cout << "1rs Notes = " << n1 << endl;
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+// // ---------------------__Functions------------
+
+// power of (a,b)
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     //pow(a,b)
+
+//     int a , b;
+//     cout << "Enter the num: "<< endl;
+//     cin >>  a;
+//     cout << "enter the power of num: " << endl;
+//     cin >>  b;
+
+//     int ans = 1;
+//     for(int i=1; i<=b; i++){
+//         ans = ans*a;
+//     }
+//     cout << "ans is: "<< ans<< endl;
+
+//     return 0;
+// }
+
+
+
